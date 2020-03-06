@@ -1,0 +1,121 @@
+<html>
+<head>
+
+ 
+<style>
+    .labeltext {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 8px;
+    }
+    .hidden {
+      display:none;
+    }
+    .selected_edge {
+      stroke : steelblue;
+      stroke-width : 1.5px;
+      stroke-opacity : 1;
+    }
+    .deselected_node {
+      opacity : .3;
+    }
+    .mouseover {
+      position : absolute;
+      background-color: steelblue;
+      width : 200px;
+      z-index : 1000000;
+      font-size: 8px;
+    }
+    .row text {
+      fill : black;
+    }
+</style>
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="src/dc.css">
+
+
+<title>398 reports</title>
+</head>
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-12" align="center">
+        <h1>398 Reports Exploration</h1>
+        <div class="row">
+          <div class="col-12">
+          <div class="dc-data-count">
+              <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a class="button button-default"
+                  href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+           </div>
+         </div>
+         </div>
+        <div class="row">
+
+          <div class="col-3" style="height:1360px; overflow: auto">
+            <h6>Program Title</h6>
+            <div id="programtitle-graph"></div>
+          </div>
+          <div class="col-9">
+            <div class="row">
+              <div class="col-12 ">
+                <h6>Programs by City</h6>
+            <div id="cities-graph">
+            </div>
+            <hr>
+          </div>
+        <div class="col-12">
+          <h6>Program by Time</h6>
+            <div id="years-graph">
+            </div>
+            <hr>
+        </div>
+        <div class="col-6">
+           
+          <h6>Program intended audience age-low end</h6>
+          <div id="fromage-graph">
+          </div>
+          <hr>
+        </div>
+        <div class="col-6">
+           
+          <h6>Program intended audience age-high end</h6>
+          <div id="toage-graph">
+          </div>
+          <hr>
+        </div>
+          <div class="col-12">
+           
+            <h6>Preemptions</h6>
+            <div id="preemptions-graph">
+            </div>
+             <hr>
+        </div>
+          <div class="col-12">
+             
+            <h6>Network Affiliation</h6>
+            <div id="network-graph">
+            </div>
+        </div>
+            </div>
+          </div>
+          
+       
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <hr>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="src/d3.v5.js"></script>
+<script type="text/javascript" src="src/crossfilter.js"></script>
+<script type="text/javascript" src="src/dc.js"></script>
+<script type="text/javascript" src="398_reports.js"></script>
+  
